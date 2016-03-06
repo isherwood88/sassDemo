@@ -1,0 +1,28 @@
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+$mq-breakpoints: (
+    mobile:  400px,
+    tablet:  740px,
+    desktop: 980px
+);
+
+// Define the breakpoint from the $mq-breakpoints list that should
+// be used as the target width when outputting a static stylesheet
+// (i.e. when $mq-responsive is set to 'false').
+$mq-static-breakpoint: mobile;
+
+
+@import "reset";
+@import 'mq';
+@import "colors";
+@import "helpers";
+@import "variables";
+@import "text-styles";
+
+@import "page";
+@import "components/header";
+@import "components/menu";
+@import "components/content";
+@import "components/sidebar";
+@import "components/footer";

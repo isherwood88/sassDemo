@@ -1,0 +1,28 @@
+
+.sidebar {
+  @extend .centre;
+
+  display: none;
+
+  @include mq($from: mobile) {
+
+    display: inline-block;
+    vertical-align: top;
+    width: $sidebar-width;
+  }
+}
+
+.sidebar__card {
+  width: 100%;
+  padding-left: $unit;
+  padding-bottom: $double-unit;
+}
+
+.sidebar__card-title {
+  @extend .card-title-text-style;
+  padding-bottom: $unit;
+}
+
+.sidebar__card-image img {
+  width: 100%;
+}

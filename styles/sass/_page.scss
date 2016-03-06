@@ -1,0 +1,13 @@
+
+.page-container {
+  @extend .centre;
+
+  min-width: 320px;
+  width: $mobile-page-width;
+  padding: $unit $tripple-unit 0 $tripple-unit;
+
+  @include mq($from: mobile) {
+    width: $page-width;
+    padding: $tripple-unit 0 0 0;
+  }
+}

@@ -1,0 +1,42 @@
+
+.menu-container {
+  width: 100%;
+  padding-bottom: $tripple-unit;
+}
+
+.menu__bar {
+  text-align: center;
+
+  @include mq($from: mobile) {
+    display: none;
+  }
+}
+
+.menu__toggle {
+  @extend .menu-text-style;
+
+  border: solid $menu-border-color 1px;
+  background-color: $menu-background-color;
+  padding: $unit;
+  display: inline-block;
+}
+
+.menu__list {
+  @extend .centre;
+  display: none;
+
+  @include mq($from: mobile) {
+    border: solid $menu-border-color 1px;
+    background-color: $menu-background-color;
+    padding: $half-unit;
+    display: block;
+  }
+}
+
+.menu__item {
+  @extend .menu-text-style;
+  display: inline-block;
+  width: 16.666%;
+  padding: $unit;
+  text-align: center;
+}

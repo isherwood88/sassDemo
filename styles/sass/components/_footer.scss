@@ -1,0 +1,29 @@
+$footer-min-height: 56px;
+$item-size: 20%;
+
+.footer-container {
+}
+
+.footer__list {
+  min-height: $footer-min-height;
+  border: solid $menu-border-color 2px;
+  border-bottom: none;
+  background-color: $menu-background-color;
+  margin: 0 $tripple-unit;
+  text-align: center;
+}
+
+.footer__social-media-item {
+  display: inline-block;
+  width: $item-size;
+  padding: $unit;
+  margin: $unit;
+
+  img {
+    width: 100%;
+  }
+
+  @include mq($from: mobile) {
+    display: none;
+  }
+}
